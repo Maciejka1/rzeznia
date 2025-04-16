@@ -8,16 +8,10 @@ return (
             <ul>
                 <p class="font-bold text-2xl text-black">Kontakt</p>
                 <li>
-                    <span class="font-bold">Adres:</span> 32-300 Olkusz ul. Pomorska 22
+                    <span className="font-bold">Adres:</span> Polna 175, 60-535 Poznań
                 </li>
                 <li>
-                    <span class="font-bold">Telefon:</span> +48 793 201 154
-                </li>
-                <li>
-                    <span class="font-bold">Facebook: </span><a href="https://www.facebook.com/Dzikistawolkusz" target="blank">Dziki Staw Sauna&Jacuzzi</a>
-                </li>
-                <li>
-                    <span class="font-bold">Instagram:</span> <a href="https://www.instagram.com/dzikistawolkusz/" target="blank">dzikistawolkusz</a>
+                    <span className="font-bold">Telefon:</span> +48 669 997 112
                 </li>
             </ul>
         <ul>
@@ -27,7 +21,7 @@ return (
         </div>
         <div class="mt-5">
             <p class="font-bold">
-                Copyright  Paweł Babiuch 2021
+                Copyright Anthony Cubeth 2021
             </p>
             <p>Design and project by <a href="https://maciejka.netlify.app">Maciejka</a></p>
         </div>

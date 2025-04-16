@@ -4,12 +4,12 @@ import {motion} from 'framer-motion'
 export function OpeningTime(props){
     let daysOfTheWeek = [
         {day: "Poniedziałek: ", isOpened: true},
-        {day: "Wtorek: "},
+        {day: "Wtorek: ", isOpened: true},
         {day: "Środa: ", isOpened: true},
-        {day: "Czwartek: "},
-        {day: "Piątek: "},
-        {day: "Sobota: "},
-        {day: "Niedziela: "}
+        {day: "Czwartek: ", isOpened: true},
+        {day: "Piątek: ", isOpened: true},
+        {day: "Sobota: ", isOpened: true},
+        {day: "Niedziela: ", isOpened: true}
     ]
     return(
     <ul className={props.ulStyle}>
@@ -18,7 +18,7 @@ export function OpeningTime(props){
             return(
                 <li>
                     <span className="font-bold">{dayProps.day}</span>
-                    {dayProps.isOpened ? "18:00 - 20:00" : <i class="fas fa-times"></i>}
+                    {dayProps.isOpened ? "12:00 - 20:00" : <i class="fas fa-times"></i>}
                 </li>
             )
         })}
@@ -38,30 +38,47 @@ exit={{opacity: 0}}
 >
 
 <main className="max-w-7xl mx-auto p-2">
-    <h2 className="font-bold text-5xl md:text-7xl mt-40 mb-10"><span class="text-green-300">Skontaktuj</span><br/>się z nami</h2>
+    <h2 className="font-bold text-5xl md:text-7xl mt-40 mb-10"><span class="text-red-500">Skontaktuj</span><br/>się z nami</h2>
     <section className="mb-32">
         <div className="bg-white w-full rounded-2xl flex flex-wrap  justify-between">
             <div>
                 <ul className="p-5 text-xl">
                     <p className="font-bold text-3xl text-black">Kontakt</p>
                     <li>
-                        <span className="font-bold">Adres:</span> 32-300 Olkusz ul. Pomorska 22
+                        <span className="font-bold">Adres:</span> Polna 175, 60-535 Poznań
                     </li>
                     <li>
-                        <span className="font-bold">Telefon:</span> +48 793 201 154
-                    </li>
-                    <li>
-                        <span className="font-bold">Facebook: </span><a href="https://www.facebook.com/Dzikistawolkusz" target="blank">Dziki Staw Sauna&Jacuzzi</a>
-                    </li>
-                    <li>
-                        <span className="font-bold">Instagram:</span> <a href="https://www.instagram.com/dzikistawolkusz/" target="blank">dzikistawolkusz</a>
+                        <span className="font-bold">Telefon:</span> +48 669 997 112
                     </li>
                 </ul>
                 <OpeningTime ulStyle = "leading-8 text-xl p-5" pStyle = "font-bold text-3xl text-black" />
             </div>
+            <div className="relative w-4/6  pb-[66.66%]">
+      <iframe
+        title="Google Map"
+        src="https://maps.google.com/maps?width=600&height=400&hl=en&q=anthony%20cubet%20poznan&t=&z=17&ie=UTF8&iwloc=B&output=embed"
+        className="absolute top-0 left-0 w-full h-full"
+        frameBorder="0"
+        scrolling="no"
+        marginHeight="0"
+        marginWidth="0"
+        allowFullScreen
+      ></iframe>
 
-            <iframe title="google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.0538099346973!2d19.53730741595703!3d50.29092340672746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716e346b36125e3%3A0x12b76741264740a!2sDziki%20Staw%20Sauna%26Jacuzzi!5e0!3m2!1spl!2spl!4v1637155202787!5m2!1spl!2spl" allowfullscreen="" loading="lazy" className="rounded-r-2xl w-full h-96 md:w-1/2 md:h-auto"></iframe>
-        </div>
+      <a
+        href="https://map-embed.org"
+        className="text-[2px] text-gray-500 absolute bottom-0 left-0 z-10 max-h-[10px] overflow-hidden"
+      >
+        map generator
+      </a>
+      <a
+        href="https://sprunkly.org"
+        className="text-[2px] text-gray-500 absolute bottom-0 left-0 z-10 max-h-[10px] overflow-hidden"
+      >
+        map generator
+      </a>
+    </div>
+        </div>    
     </section>
 </main>
 </motion.div>

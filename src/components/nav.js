@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import {Link} from 'react-router-dom'
-import logo from '../img/logo-mini.png'
+import logo from '../img/logo.png'
 
 function Nav() {
   const [navControl, setNavControl] = React.useState()
@@ -16,7 +16,7 @@ function Nav() {
         md:my-2 md:flex-row" style={{right: navControl}}> 
         <div className="md:h-full md:flex items-center">
             <img src={logo} alt="logo" className=" h-20 mt-8 rounded-full md:m-0 md:h-full md:rounded-none"/>
-            <h1 className="md:ml-2 text-lg">Dziki staw</h1>
+            <h1 className="md:ml-2 text-lg">Rzeźnia Anthony Cubeth</h1>
         </div>
             <ul className="flex flex-col mb-10 text-black gap-5 font-semibold text-lg md:mb-0 md:flex-row md:text-black">
                 <Link to="/">
@@ -30,6 +30,9 @@ function Nav() {
                 </Link>
                 <Link to="/informacje">
                     <li>Informacje</li>
+                </Link>
+                <Link to="/rytualy">
+                    <li>Rytuały</li>
                 </Link>
             </ul>
             <div className="text-4xl md:hidden" onClick={() => setNavControl('-100%')}>

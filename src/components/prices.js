@@ -3,7 +3,7 @@ import {motion} from 'framer-motion'
 import {useEffect} from 'react'
 function Prices(){
 useEffect(() => {
-    document.title = "Dziki staw - Cennik";   
+    document.title = "Rzeźnia - Cennik";   
 }, []);
     return(
 <motion.div class="bg-[#f4f4f4] font-raleway"
@@ -13,56 +13,78 @@ exit={{opacity: 0}}
 >
     <main class="max-w-7xl mx-auto p-2 ">
         <section>
-            <h2 className="mt-40 mb-5 font-bold text-5xl md:text-7xl"><span class="text-green-300">Cennik </span>sauny</h2>
+            <h2 className="mt-40 mb-5 font-bold text-5xl md:text-7xl"><span class="text-red-500">Towary </span>
+             dostępne</h2>
             <div className="flex flex-col md:flex-row gap-3 ">
                 <PricesTile
-                title='Karnet na wejścia'
+                title='Oferty'
                 prices={[
                     {
-                        title: "Wejście pojedyńcze",
-                        price: 15 + "zł"
+                        title: "Wołowina elektroakustyczna",
+                        price: 45 + "zł/kg"
                     },
                     {
-                        title: "3 wejścia",
-                        price: 45.99 + "zł"
+                        title: "Wieprzowina fotonowa",
+                        price: 39 + "zł/kg"
                     },
                     {
-                        title: "6 wejść",
-                        price: 59.99 + "zł"
+                        title: "Baranek Cubeth (poświęcony)",
+                        price: 999 + "zł/sztuka"
                     }
                 ]}/>
                 <PricesTile
-                title='Wynajem na wyłączność'
+                title='Specjalne oferty'
                 prices={[
                     {
-                        title: "1 godzina",
-                        price: 79.99 + "zł"
+                        title: "Mięso psie (limitowana edycja NFT)",
+                        price: "cena uzgadniana z Radą Damczyka"
                     },
                     {
-                        title: "2 godziny",
-                        price: 149.99 + "zł"
-                    },
-                    {
-                        title: "Każda kolejna godzina",
-                        price: 50 + "zł"
+                        title:"Transcendentalny Boczek - Każdy plaster poddany 33-godzinnej medytacji przy dźwiękach śpiewu wielorybów ",
+                        price: "69 zł/100g "
                     }
                 ]}/>
             </div>
         </section>
         <section>
-            <h2 className="mt-20 mb-5 font-bold text-5xl md:text-7xl"><span class="text-green-300">Inne </span>usługi</h2>
+            <h2 className="mt-20 mb-5 font-bold text-5xl md:text-7xl"><span class="text-red-500">Inne </span>usługi</h2>
             <div className="flex flex-col md:flex-row gap-3">
                 <PricesTile
-                title='Dodatkowe usługi'
+                title='💀 USŁUGI EKSTRA'
                 prices={[
                     {
-                        title: "Olejek zapachowy do sauny",
-                        price: 10 + "zł"
+                        title: "Święcenie baranka",
+                        price: 399 + "zł"
                     },
                     {
-                        title: "Wynajem ręcznika",
-                        price: 10 + "zł"
+                        title: "Plebania Damczyka",
+                        price: 12
                     },
+                    {
+                        title: "Mięsna Ceremonia Pogrzebowa - Kremacja w wędzarni (prochy w eleganckim słoiku), Ostatnie pożegnanie Twojego ulubionego kawałka mięsa   ",
+                        price: "1333 zł"
+                    },
+                    {
+                        title: "Kurs survivalowy - Jak przetrwać apokalipsę żywiąc się tylko klientami konkurencji  ",
+                        price: "999 zł za weekend"
+                    }
+                ]}/>
+                </div>
+        </section>
+        <section>
+            <h2 className="mt-20 mb-5 font-bold text-5xl md:text-7xl"><span class="text-red-500">VIP </span></h2>
+            <div className="flex flex-col md:flex-row gap-3">
+                <PricesTile
+                title='🔞 USŁUGI VIP'
+                prices={[
+                    {
+                        title: "Mięsna Adopcja baranka -  Możliwość wychowania świni lub cielaka jako własnego potomka  - Roczne świadectwa szkolne i zdjęcia rodzinne  - Uroczysty rozbiór na 18-te urodziny  ",
+                        price: "cena: twoje dziecko"
+                    },
+                    {
+                        title: "Ludzkie BBQ",
+                        price: "cena za kg jak za wołowinę wagyu"
+                    }
                 ]}/>
                 </div>
         </section>

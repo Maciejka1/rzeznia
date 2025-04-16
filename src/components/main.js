@@ -1,14 +1,14 @@
-import saunaOutsideGallery from '../img/pic1.webp'
+import saunaOutsideGallery from '../img/pic1.jpg'
 import maciekuser from '../img/user-review-icon.webp'
-import maniekuser from '../img/user-icon.webp'
+import maniekuser from '../img/user-icon.png'
 import React from 'react'
 import { Link } from 'react-router-dom'
-import saunaInside from '../img/sauna-inside-picture-gallery.webp'
-import saunaOutside from '../img/sauna-picture-gallery.webp'
-import stawOutside from '../img/258606752_610664313689499_8898527723351827870_n.webp'
-import jacuzziPic from '../img/jacuzzi-picture-gallery.webp'
-import jacuzziOutside from '../img/jacuzzi-gallery.webp'
-import jacuzziDziki from '../img/dziki.webp'
+import saunaInside from '../img/zamkniete.jpeg'
+import saunaOutside from '../img/szczur.jpg'
+import stawOutside from '../img/OPIERDOL.png'
+import jacuzziPic from '../img/automat.png'
+import jacuzziOutside from '../img/kibel2.png'
+import jacuzziDziki from '../img/kibel.jpg'
 import {motion} from 'framer-motion'
 import {useEffect} from 'react'
 function Main() {
@@ -26,9 +26,9 @@ exit={{opacity: 0}}
         <div className="mt-20 md:mt-48 lg:flex justify-evenly">
             <div className="mb-5">
                 <h1 className="text-6xl md:text-8xl font-bold">
-                    <span className="text-green-300 ">Najbardziej</span><br/>unikatowe<br/> miejsce w <span className="text-green-300">Olkuszu</span>
+                    <span className="text-red-500 ">Najbardziej</span><br/>unikatowa<br/> Rzeźnia <span className="text-red-500">Baranków</span>
                 </h1>
-                <p className="text-xl md:text-xl my-5 font-light delay">Sauna na zewnątrz<br/> wprowadza niezwykłą atmosferę.</p>
+                <p className="text-xl md:text-xl my-5 font-light delay">Baranki święcone<br/> mordowane z sercem.</p>
                 <a href="/#gallery" className="flex items-center font-semibold text-lg w-60">
                     <p className="z-10">Dowiedz się więcej</p>
                     <div className="w-20 h-20 rounded-full bg-white -ml-5 flex justify-center items-center">
@@ -43,14 +43,14 @@ exit={{opacity: 0}}
     </section>
     <section className="pt-20 relative" id="gallery">
         <p className="font-bold text-5xl mb-5" >
-            <span className="text-green-300" >Opinie </span>klientów
+            <span className="text-red-500" >Opinie </span>klientów
         </p>
         <div className="flex flex-col gap-5 md:flex-row justify-between">
             <div className="max-w-xl bg-white p-5 rounded-xl">
                 <div className="flex gap-2 items-center">
-                    <img src={maciekuser} className="w-16 h-16" alt="user"/>
-                    <h2 className="text-xl">Maciek
-                        <p className="text-sm text-gray-600">Lokalny przewodnik · 17 październik 2021</p>
+                    <img class="w-16 h-16 rounded-full object-cover" src={maciekuser} className="w-16 h-16" alt="user"/>
+                    <h2 className="text-xl">Tuan Nguyen, szef kuchni Ha Noi
+                        <p className="text-sm text-gray-600">Lokalny przewodnik · 17 październik 2024</p>
                     </h2>
                 </div>
                 <span className="text-yellow-300 text-xl">
@@ -61,15 +61,17 @@ exit={{opacity: 0}}
                     <i className="fas fa-star"></i>
                 </span>
                 <p>
-                    Niesamowite miejsce do spędzenia wieczoru z przyjaciółmi.
-                    Jestem saunowiczem od zawsze jednak jeszcze nigdy nie spotkałem się z takim czymś, mianowicie sauna jest na dworze co daje niesamowite orzeźwienie. Zdecydowanie polecam chociaż przyjść raz dla próby.
+                Jako właściciel restauracji Ha Noi mogę śmiało powiedzieć: Anthony to mistrz! Jego dostawy są zawsze świeże, a psy z 'nadwyżki' to hit wśród naszych klientów. Zupa z Juleczki? Każdy Wietnamczyk płacze ze wzruszenia! Współpraca na 5 gwiazdek – albo i 6!
                 </p>
             </div>
             <div className="max-w-xl bg-white p-5 rounded-xl">
                 <div className="flex gap-2 items-center">
-                    <img src={maniekuser} className="w-16 h-16" alt="user"/>
-                    <h2 className="text-xl">Mariusz
-                        <p className="text-sm text-gray-600">Lokalny przewodnik · 16 lipca 2021</p>
+                    <div >
+                        <img class="w-16 h-16 rounded-full object-cover" src={maniekuser} className="w-16 h-16" alt="user"/>
+                    </div>
+                    
+                    <h2 className="text-xl">Ania i Robert
+                        <p className="text-sm text-gray-600">Lokalny przewodnik · 16 lipca 2024</p>
                     </h2>
                 </div>
                 <span className="text-yellow-300 text-xl">
@@ -79,9 +81,7 @@ exit={{opacity: 0}}
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
                 </span>
-                <p>Wspaniałe miejsce do odpoczynku, takiego totalnego relaksu.
-                    Na uboczu Olkusza przy lesie, w saunie zmieści się 10 osób, jest również jacuzzi lub prysznic balia do schładzania.
-                    Jest możliwość usmażyć kiełbaskę przy ognisku, las i jeziorko na widoku za płotem.</p>
+                <p>Wzięliśmy udział w promocji 'Pogłaszcz przyszły kabanos' i to była najlepsza randka od lat! Anthony opowiadał o Juleczce z takim uczuciem, że moja żona aż się rozczuliła. A potem sami pakowaliśmy mięso do próżniowych worków – romantycznie i praktycznie! Już nie możemy doczekać się kolejnej edycji.</p>
             </div>
         </div>
         <a href="https://www.google.pl/maps/place/Dziki+Staw+Sauna&Jacuzzi/@50.2909234,19.5373074,17z/data=!4m7!3m6!1s0x4716e346b36125e3:0x12b76741264740a!8m2!3d50.2908115!4d19.5395798!9m1!1b1" target="blank" className="absolute right-0">Zobacz wszystkie opinie <i className="fas fa-arrow-right"></i></a>
@@ -114,7 +114,7 @@ exit={{opacity: 0}}
                 <img src={jacuzziDziki} className="md:w-[50%]" alt="dziki staw outside" />
             </div>
         </div>
-        <p className="text-2xl mt-10 mb-5 font-bold"><span className="text-green-300">Gotowy</span> na relaks? Zobacz cennik lub skontaktuj się z nami!</p>
+        <p className="text-2xl mt-10 mb-5 font-bold"><span className="text-red-500">Gotowy</span> na Juleczke? Zobacz cennik lub skontaktuj się z nami! Poznaj nasze Rytuały.</p>
         <div className="flex gap-2">
             <Link to="/kontakt">
                 <p className="text-center w-40 bg-green-300 text-white text-xl p-2 rounded-full transition-all hover:bg-green-400">
@@ -126,6 +126,12 @@ exit={{opacity: 0}}
                     Cennik
                 </p>
             </Link>
+            <Link to="/historia">
+                <p className="text-center border-2 border-green-300 w-40 text-xl p-2 rounded-full transition-all hover:text-gray-900 hover:border-green-500 text-gray-500 mb-40">
+                    Rytuały
+                </p>
+            </Link>
+
         </div>
     </section>
 </div>
