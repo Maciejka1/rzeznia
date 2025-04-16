@@ -28,7 +28,7 @@ export function OpeningTime(props){
 }
 export function Contact(){
 useEffect(() => {
-    document.title = "Dziki staw - Kontakt";   
+    document.title = "Rzeznia - Kontakt";   
 }, []);
 return(
 <motion.div className="bg-[#f4f4f4] font-raleway"

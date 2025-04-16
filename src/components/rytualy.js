@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 
 export default function Rytualy() {
   useEffect(() => {
-    document.title = "Tragikomiczna Saga Miłosna";
+    document.title = "Rzeznia";
   }, []);
 
   return (

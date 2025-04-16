@@ -13,7 +13,7 @@ import {motion} from 'framer-motion'
 import {useEffect} from 'react'
 function Main() {
     useEffect(() => {
-        document.title = "Dziki staw - Sauna w Olkuszu";   
+        document.title = "Rzeznia - Sauna w Olkuszu";   
     }, [])
 return (
 <motion.div className="App bg-[#f4f4f4] font-raleway"

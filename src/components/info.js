@@ -3,7 +3,7 @@ import React from 'react'
 import {useEffect} from 'react'
 function Info(){
     useEffect(() => {
-        document.title = "Dziki staw - Informacje";   
+        document.title = "Rzeznia - Informacje";   
     }, [])
     return(
 <motion.div class="bg-[#f4f4f4] font-raleway"
