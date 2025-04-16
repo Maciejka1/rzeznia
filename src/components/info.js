@@ -31,7 +31,7 @@ exit={{opacity: 0}}
                 Karnet na 6 lub 3 "sztuki bydła" ważny do:<br/>
                 - Ostatniego tchnienia klienta<br/>
                 - Apokalipsy zombie (która pierwsza)<br/>
-                Zakup przez <a href="https://www.facebook.com/RzeźniaAnthonyCubeth" className="text-red-500 underline">Messenger</a> z hasłem "Mięso jest prawdą!"
+                Zakup przez <a href="https://www.facebook.com/profile.php?id=100092718819647" className="text-red-500 underline">Messenger</a> z hasłem "Mięso jest prawdą!"
             </p>
         </div>
         <div className="bg-white rounded-2xl p-5 max-w-2xl mt-10 mb-3">
