@@ -2,11 +2,10 @@ import React from 'react';
 import '../App.css';
 import {Link} from 'react-router-dom'
 import logo from '../img/logo.png'
-
 function Nav() {
   const [navControl, setNavControl] = React.useState()
   return (
-    <div>
+    <div class='z-50'>
         <div onClick={() => setNavControl('0')}>
             <div className="open-menu fixed m-5 text-4xl top-0 right-0 md:hidden" >
                 <i className="fas fa-bars"></i>

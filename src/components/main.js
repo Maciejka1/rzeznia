@@ -115,10 +115,15 @@ exit={{opacity: 0}}
             </div>
         </div>
         <p className="text-2xl mt-10 mb-5 font-bold"><span className="text-red-500">Gotowy</span> na Juleczke? Zobacz cennik lub skontaktuj się z nami! Poznaj nasze Rytuały.</p>
-        <div className="flex gap-2">
+        <div className="flex flex-wrap gap-2">
             <Link to="/kontakt">
                 <p className="text-center w-40 bg-green-300 text-white text-xl p-2 rounded-full transition-all hover:bg-green-400">
                     Kontakt
+                </p>
+            </Link>
+            <Link to="/rytualy">
+                <p className="text-center border-2 border-green-300 w-40 text-xl p-2 rounded-full transition-all hover:text-gray-900 hover:border-green-500 text-gray-500 mb-40">
+                    Rytuały
                 </p>
             </Link>
             <Link to="/cennik">
@@ -126,11 +131,7 @@ exit={{opacity: 0}}
                     Cennik
                 </p>
             </Link>
-            <Link to="/historia">
-                <p className="text-center border-2 border-green-300 w-40 text-xl p-2 rounded-full transition-all hover:text-gray-900 hover:border-green-500 text-gray-500 mb-40">
-                    Rytuały
-                </p>
-            </Link>
+
 
         </div>
     </section>
