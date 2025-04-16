@@ -86,7 +86,7 @@ exit={{opacity: 0}}
         </div>
         <a href="https://www.google.pl/maps/place/Dziki+Staw+Sauna&Jacuzzi/@50.2909234,19.5373074,17z/data=!4m7!3m6!1s0x4716e346b36125e3:0x12b76741264740a!8m2!3d50.2908115!4d19.5395798!9m1!1b1" target="blank" className="absolute right-0">Zobacz wszystkie opinie <i className="fas fa-arrow-right"></i></a>
     </section>
-<p className="font-bold text-5xl mt-20"><span className="text-green-300">
+<p className="font-bold text-5xl mt-20"><span className="text-red-500">
     Zobacz</span> galerię
 </p>
 
@@ -117,17 +117,17 @@ exit={{opacity: 0}}
         <p className="text-2xl mt-10 mb-5 font-bold"><span className="text-red-500">Gotowy</span> na Juleczke? Zobacz cennik lub skontaktuj się z nami! Poznaj nasze Rytuały.</p>
         <div className="flex flex-wrap gap-2">
             <Link to="/kontakt">
-                <p className="text-center w-40 bg-green-300 text-white text-xl p-2 rounded-full transition-all hover:bg-green-400">
+                <p className="text-center w-40 bg-red-500 text-white text-xl p-2 rounded-full transition-all hover:bg-red-600">
                     Kontakt
                 </p>
             </Link>
             <Link to="/rytualy">
-                <p className="text-center border-2 border-green-300 w-40 text-xl p-2 rounded-full transition-all hover:text-gray-900 hover:border-green-500 text-gray-500 mb-40">
+                <p className="text-center border-2 border-red-500 w-40 text-xl p-2 rounded-full transition-all hover:text-gray-900 hover:border-red-600 text-gray-500 mb-40">
                     Rytuały
                 </p>
             </Link>
             <Link to="/cennik">
-                <p className="text-center border-2 border-green-300 w-40 text-xl p-2 rounded-full transition-all hover:text-gray-900 hover:border-green-500 text-gray-500 mb-40">
+                <p className="text-center border-2 border-red-500 w-40 text-xl p-2 rounded-full transition-all hover:text-gray-900 hover:border-red-600 text-gray-500 mb-40">
                     Cennik
                 </p>
             </Link>
